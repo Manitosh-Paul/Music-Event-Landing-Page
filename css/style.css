@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*Variables*/
+:root {
+  --primary: #fca311;
+  --secondary: #182235;
+  --bg: rgb(10, 17, 31);
+  --pure: #fff;
+  --text: #d5e4ff;
+}
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+#container {
+  max-width: 2000px;
+  margin: 0 auto;
+  height: 100vh;
+}
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 750px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slider {
+  display: flex;
+  width: 100%;
+  height: 750px;
+}
+.img {
+  display: flex;
+  min-width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 54px;
+  font-weight: bold;
+}
+.img img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.fa-solid {
+  font-size: 3em;
+  color: var(--primary);
+}
+#prev {
+  left: 5%;
+}
+#next {
+  right: 5%;
+}
+
+.black_linear {
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(167, 207, 223, 0) 0%,
+    rgba(10, 17, 31, 1) 100%
+  );
+  width: 100%;
+  height: 750px;
+  bottom: 0;
+  left: 0;
+}
+.countdown-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: var(--bg);
+  padding-bottom: 40px;
+}
+.days-container,
+.hours-container,
+.minutes-container,
+.seconds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  width: 140px;
+  height: 140px;
+  border-radius: 99px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: var(--primary);
+}
+
+.days-label,
+.hours-label,
+.minutes-label,
+.seconds-label {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--pure);
+}
+
+.about {
+  width: 100%;
+  height: 500px;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about_image_container {
+  width: 30%;
+  height: 80%;
+  position: relative;
+}
+.about_image_container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about_text {
+  width: 40%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.about_heading,
+.schedule_heading {
+  width: 100%;
+  color: var(--pure);
+  font-size: 1.5em;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.small_hr {
+  width: 30px;
+  height: 2px;
+  margin-right: 10px;
+  background-color: var(--primary);
+}
+.event_name,
+.schedule_name {
+  width: 100%;
+  color: var(--primary);
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.about_event_text,
+.schedule_event_text {
+  width: 100%;
+  color: var(--text);
+  font-size: 1.08em;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.about_event_text span {
+  color: var(--primary);
+  font-weight: bold;
+}
+.date_time_venue_container {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+}
+.date_time {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.venue {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.event_date,
+.venue_stage {
+  font-size: 1.2em;
+  color: var(--pure);
+}
+.event_time,
+.venue_address {
+  font-size: 1.01em;
+  color: var(--text);
+}
+.register_btn_container {
+  width: 100%;
+}
+.reg_btn {
+  padding: 10px 15px;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.01em;
+  font-weight: 600;
+  color: var(--pure);
+  cursor: pointer;
+}
+.schedule {
+  width: 100%;
+  height: 500px;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.schedule_container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+}
+.date_schedule {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date_nav_container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.date_nav_container .date {
+  background-color: var(--bg);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.day {
+  color: var(--pure);
+}
+.specific_date {
+  color: var(--text);
+}
+.date_specification {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 60%;
+}
+.warm-up,
+#band_name,
+#after_party {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--pure);
+}
+.specified_time {
+  color: var(--pure);
+  width: 15%;
+}
+
+.specified_title {
+  text-transform: capitalize;
+  color: var(--text);
+  width: 85%;
+}
+
+#band_playing {
+  color: var(--primary);
+}

@@ -1,0 +1,222 @@
+@media screen and (max-width: 1025px) {
+  .carousel,
+  .carousel-slider,
+  .black_linear {
+    height: 500px;
+  }
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 2em;
+  }
+  .about_heading,
+  .schedule_heading {
+    font-size: 1.4em;
+  }
+  .event_name,
+  .schedule_name {
+    font-size: 1.5em;
+  }
+  .about_event_text,
+  .schedule_event_text {
+    font-size: 1.01em;
+    line-height: 1.2;
+  }
+  .event_date,
+  .venue_stage {
+    font-size: 1.1em;
+  }
+  .about {
+    height: 550px;
+  }
+  .schedule_container {
+    width: 40%;
+  }
+  .date_nav_container {
+    width: 80%;
+  }
+  .date_nav_container .date {
+    padding: 5px 15px;
+  }
+  .date_specification {
+    width: 80%;
+  }
+  .specified_time {
+    font-size: 0.9em;
+    width: 20%;
+  }
+  .specified_title {
+    font-size: 0.9em;
+    width: 80%;
+  }
+  @media (max-width: 800px) {
+    .carousel,
+    .carousel-slider,
+    .black_linear {
+      height: 400px;
+    }
+    .fa-solid {
+      font-size: 2.7em;
+    }
+    .days-container,
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+      font-size: 0.8em;
+      width: 100px;
+      height: 100px;
+    }
+    .countdown-container {
+      height: 150px;
+      padding-bottom: 20px;
+    }
+    .about,
+    .schedule {
+      height: 800px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+    .about_image_container {
+      width: 50%;
+      height: 60%;
+    }
+    .about_text {
+      width: 60%;
+    }
+    .about_heading,
+    .schedule_heading {
+      justify-content: center;
+    }
+    .event_name,
+    .schedule_name {
+      text-align: center;
+    }
+    .about_event_text,
+    .schedule_event_text {
+      line-height: 1.5;
+      text-align: center;
+    }
+    .date_time_venue_container {
+      flex-direction: column;
+    }
+    .date_time,
+    .venue {
+      width: 100%;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .register_btn_container {
+      text-align: center;
+    }
+    .schedule {
+      padding-top: 30px;
+    }
+    .schedule_event_text {
+      width: 70%;
+    }
+    .schedule_container {
+      width: 70%;
+      height: 50%;
+      padding-left: 0;
+    }
+    .date_schedule {
+      height: 50%;
+    }
+  }
+  @media (max-width: 637px) {
+    .fa-solid {
+      font-size: 2.4em;
+    }
+
+    .carousel,
+    .carousel-slider,
+    .black_linear {
+      height: 250px;
+    }
+    .countdown-container {
+      height: 100px;
+    }
+    .days-container,
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+      font-size: 0.45em;
+      width: 70px;
+      height: 70px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+    }
+    .about_image_container {
+      width: 60%;
+    }
+    .about_text {
+      width: 90%;
+    }
+    .schedule_container {
+      width: 90%;
+    }
+    .schedule_event_text,
+    .date_schedule {
+      width: 90%;
+    }
+    .date_nav_container,
+    .date_specification {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 424px) {
+    .event_time,
+    .venue_address {
+      font-size: 1.01em;
+      color: var(--text);
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .fa-solid {
+      font-size: 1.5em;
+    }
+    .btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .event_time,
+    .venue_address {
+      font-size: 0.9em;
+      color: var(--text);
+      text-align: center;
+    }
+    .event_date,
+    .venue_stage {
+      font-size: 1em;
+    }
+    .reg_btn {
+      font-size: 0.9em;
+    }
+    .about_heading,
+    .schedule_heading {
+      font-size: 1.2em;
+    }
+    .event_name,
+    .schedule_name {
+      font-size: 1.4em;
+    }
+    .about_event_text,
+    .schedule_event_text {
+      font-size: 0.9em;
+    }
+    .date_nav_container .date {
+      padding: 5px 10px;
+    }
+    .day,
+    .specific_date {
+      font-size: 0.9em;
+    }
+    .specified_title {
+      padding-left: 20px;
+    }
+  }
+}
